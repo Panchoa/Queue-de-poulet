@@ -2,17 +2,17 @@ import java.util.List;
 
 public class Cocktail {
 
-    private List<Ingredient> ingredients;
+    private Ingredient[] ingredients;
     private String nomCocktail;
     private int preparationTime;
 
-    protected Cocktail(String nomCocktail, List<Ingredient> listeIngredient, int preparationTime){
+    protected Cocktail(String nomCocktail, Ingredient listeIngredient[], int preparationTime){
         this.nomCocktail = nomCocktail;
         ingredients = listeIngredient;
         this.preparationTime = preparationTime;
     }
 
-    public List<Ingredient> getIngredients(){
+    public Ingredient[] getIngredients(){
         return ingredients;
     }
 

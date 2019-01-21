@@ -16,7 +16,7 @@ public class Barman extends Thread {
                     sleep(500);
                 }
                 System.out.println(String.format("Preparation du cocktail : %s (avancement %d/%d)", cocktail.getNomCocktail(), preparationAdvancement, cocktail.getPreparationTime()));
-                sleep(2000);
+                sleep(1000);
                 System.out.println(String.format("Fin de la préparation du cocktail : %s n°%d", cocktail.getNomCocktail(), preparationAdvancement));
                 for (Ingredient ingredient : cocktail.getIngredients()) {
                     ingredient.drop();

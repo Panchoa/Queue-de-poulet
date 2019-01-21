@@ -1,6 +1,3 @@
-import java.util.ArrayList;
-import java.util.List;
-
 public class Main {
 
     public static void main (String[] args){
@@ -12,20 +9,11 @@ public class Main {
         Ingredient orange = new Ingredient("Orange");
         Ingredient grenadine = new Ingredient("Grenadine");
 
-        List<Ingredient> ingredientMojito = new ArrayList<>();
-        ingredientMojito.add(menthe);
-        ingredientMojito.add(glacePilee);
-        ingredientMojito.add(limonade);
-        ingredientMojito.add(citronVert);
+        Ingredient[] ingredientsMojito = { menthe, glacePilee, limonade, citronVert };
+        Ingredient[] ingredientsSunBeach = { orange, grenadine, glacePilee, limonade };
 
-        List<Ingredient> ingredientSunBeach = new ArrayList<>();
-        ingredientSunBeach.add(orange);
-        ingredientSunBeach.add(grenadine);
-        ingredientSunBeach.add(glacePilee);
-        ingredientSunBeach.add(limonade);
-
-        Cocktail mojito = new Cocktail("Mojito", ingredientMojito, 5);
-        Cocktail sunOnTheBeach = new Cocktail("Sun on the Beach", ingredientSunBeach, 8);
+        Cocktail mojito = new Cocktail("Mojito", ingredientsMojito, 5);
+        Cocktail sunOnTheBeach = new Cocktail("Sun on the Beach", ingredientsSunBeach, 8);
 
         Barman barman1 = new Barman(mojito);
         Barman barman2 = new Barman(sunOnTheBeach);
