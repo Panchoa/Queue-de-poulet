@@ -19,10 +19,10 @@ public class Main {
         ingredientMojito.add(citronVert);
 
         List<Ingredient> ingredientSunBeach = new ArrayList<>();
-        ingredientSunBeach.add(glacePilee);
-        ingredientSunBeach.add(limonade);
         ingredientSunBeach.add(orange);
         ingredientSunBeach.add(grenadine);
+        ingredientSunBeach.add(glacePilee);
+        ingredientSunBeach.add(limonade);
 
         Cocktail mojito = new Cocktail("Mojito", ingredientMojito, 5);
         Cocktail sunOnTheBeach = new Cocktail("Sun on the Beach", ingredientSunBeach, 8);

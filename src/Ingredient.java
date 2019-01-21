@@ -1,5 +1,3 @@
-import static java.lang.Thread.sleep;
-
 public class Ingredient {
 
     private String ingredient;
@@ -9,12 +7,15 @@ public class Ingredient {
         this.ingredient = ingredient;
     }
 
+    public String getIngredient(){
+        return ingredient;
+    }
+
     public synchronized void take() throws InterruptedException{
         if (isUsed){
             wait();
         }
         isUsed = true;
-        sleep(200);
     }
 
     public synchronized void drop(){
