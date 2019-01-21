@@ -1,26 +1,24 @@
-import java.util.List;
-
-public class Cocktail {
+class Cocktail {
 
     private Ingredient[] ingredients;
     private String nomCocktail;
     private int preparationTime;
 
-    protected Cocktail(String nomCocktail, Ingredient listeIngredient[], int preparationTime){
+    Cocktail(String nomCocktail, Ingredient[] ingredients, int preparationTime) {
         this.nomCocktail = nomCocktail;
-        ingredients = listeIngredient;
+        this.ingredients = ingredients;
         this.preparationTime = preparationTime;
     }
 
-    public Ingredient[] getIngredients(){
+    Ingredient[] getIngredients() {
         return ingredients;
     }
 
-    public int getPreparationTime(){
+    int getPreparationTime() {
         return preparationTime;
     }
 
-    public String getNomCocktail(){
+    String getNomCocktail() {
         return nomCocktail;
     }
 }
